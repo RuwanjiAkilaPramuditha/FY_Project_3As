@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen1"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="151dp"
+        android:layout_height="174dp"
+        android:layout_marginEnd="288dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_editor_absoluteY="-2dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/tv_hd_login"
+        android:layout_width="252dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text="LogIn"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="30dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="30dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="291dp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_move_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_edit_text"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_don_t_have_an_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="598dp" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="633dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
