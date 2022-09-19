@@ -27,7 +27,7 @@ class splashActivity : AppCompatActivity() {
         @Suppress("DEPRECATION")
         Handler().postDelayed(
             {
-                startActivity(Intent(this@splashActivity,SyllabusActivity::class.java))
+                startActivity(Intent(this@splashActivity,RegisterActivity::class.java))
                 finish()
             },1500
         )
