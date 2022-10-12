@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">FY_Project_3A\'s</string>
+    <string name="pastpaper">pastpaper</string>
+    <string name="select_paper">select paper</string>
+    <string name="_2000">2000</string>
+    <string name="_2001">2001</string>
+    <string name="_2002">2002</string>
+    <string name="_2003">2003</string>
+    <string name="_2004">2004</string>
+    <string name="_2005">2005</string>
+    <string name="_2006">2006</string>
+    <string name="_2007">2007</string>
+    <string name="_2008">2008</string>
+    <string name="_2009">2009</string>
+    <string name="_2010">2010</string>
+    <string name="_2011">2011</string>
+    <string name="_2012">2012</string>
+    <string name="_2013">2013</string>
+    <string name="_2014">2014</string>
+    <string name="_2015">2015</string>
+    <string name="_2016">2016</string>
+    <string name="_2017">2017</string>
+    <string name="_2018">2018</string>
+    <string name="_2019">2019</string>
+    <string name="_2020">2020</string>
 </resources>
