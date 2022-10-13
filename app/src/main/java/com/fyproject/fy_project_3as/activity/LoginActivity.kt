@@ -45,6 +45,7 @@ class LoginActivity : AppCompatActivity() {
         })
     }
 
+    //
     var email_value = ""
     var password_value = ""
 
@@ -86,6 +87,7 @@ class LoginActivity : AppCompatActivity() {
             }
     }
 
+    //
     private fun logged_user_to_sql(s: ModelUser?): Boolean {
         return try {
             if (s != null) {

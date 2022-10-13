@@ -79,6 +79,7 @@ class RegisterActivity : AppCompatActivity(){
         })
     }
 
+    //
     private fun selectImage() {
         val intent = Intent()
         intent.type = "image/*"
@@ -106,6 +107,8 @@ class RegisterActivity : AppCompatActivity(){
         }
     }
 
+
+    //check validation
     private fun validate() {
         modelUser.user_name = user_name!!.text.toString()
         if (modelUser.user_name.isEmpty()) {
@@ -172,6 +175,8 @@ class RegisterActivity : AppCompatActivity(){
             })
     }
 
+
+    // send data to firebase
     private fun send_data(){
         db.collection("STUDENT_TABLE").whereEqualTo("email", modelUser.email).get()
             .addOnSuccessListener(OnSuccessListener {

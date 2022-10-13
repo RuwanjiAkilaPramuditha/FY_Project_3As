@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.MainActivity"
+    tools:ignore="ExtraText">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -12,41 +13,41 @@
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
 
-        <include layout="@layout/tool_bar"/>
+        <include layout="@layout/tool_bar" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <!-- Image view  -->
+    <ImageView
+        android:id="@+id/ll_photo_i"
+        android:layout_width="585dp"
+        android:layout_height="368dp"
+        android:src="@drawable/ll_photo"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toTopOf="@+id/quote_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="-87dp"
+        tools:layout_editor_absoluteY="-21dp" />
+
+    <!-- Text View  -->
     <TextView
         android:id="@+id/quote_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Hello World!"
+        android:text="Welcome to 3A's"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+        app:layout_constraintTop_toBottomOf="@+id/ll_photo_i"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_layout"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="349dp" />
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="340dp"
-        android:layout_height="89dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
-        tools:ignore="MissingConstraints" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="101dp"
-        android:layout_height="107dp"
-        android:layout_marginTop="72dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
-
+    <!-- Linear Layout  -->
     <LinearLayout
+        android:id="@+id/ll_layout"
         android:layout_width="410dp"
         android:layout_height="355dp"
         android:orientation="horizontal"
@@ -64,7 +65,7 @@
             android:columnWidth="150dp"
             android:horizontalSpacing="15dp"
             android:numColumns="auto_fit"
-            android:verticalSpacing="15dp"/>
+            android:verticalSpacing="15dp"></GridView>
 
     </LinearLayout>
 
