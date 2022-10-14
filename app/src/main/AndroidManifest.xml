@@ -14,37 +14,27 @@
         android:theme="@style/Theme.FY_Project_3As"
         tools:targetApi="31">
         <activity
-<<<<<<< Updated upstream
-
-
-            android:name=".Subject_Topic_Activity"
+            android:name=".activity.Subject_Topic_Activity"
             android:exported="false" />
         <activity
-
-
- origin/pramuditha/subject_screen
-            android:name=".SubjectActivity"
-
-
-            android:name=".SubjectThreeTopicsActivity"
-
-            android:name=".SubjectTwoTopicsActivity"
-
-
-            android:name=".TopicActivity"
+            android:name=".activity.SubjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SubjectThreeTopicsActivity"
             android:exported="false" />
         <activity
             android:name=".activity.SubjectTwoTopicsActivity"
-
             android:exported="false" />
-=======
-            android:name=".ProfileActivity"
+        <activity
+            android:name=".activity.TopicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProfileActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
->>>>>>> Stashed changes
         <activity
             android:name=".activity.SubjectOneTopicsActivity"
             android:exported="false" />
