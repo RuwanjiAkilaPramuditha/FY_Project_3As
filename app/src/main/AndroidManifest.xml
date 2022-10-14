@@ -14,7 +14,11 @@
         android:theme="@style/Theme.FY_Project_3As"
         tools:targetApi="31">
         <activity
+
+            android:name=".SubjectThreeTopicsActivity"
+
             android:name=".SubjectTwoTopicsActivity"
+
             android:exported="false" />
         <activity
             android:name=".activity.SubjectOneTopicsActivity"
