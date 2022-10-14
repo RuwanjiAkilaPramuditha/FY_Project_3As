@@ -61,14 +61,15 @@
 
     <LinearLayout
         android:id="@+id/ll_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="413dp"
+        android:layout_height="485dp"
         android:layout_marginTop="80dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/iv_logo"
         app:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp">
 
         <EditText
             android:id="@+id/et_user_name"

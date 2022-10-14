@@ -1,10 +1,14 @@
 package com.fyproject.fy_project_3as.activity
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
 import android.widget.GridView
+import android.widget.TextView
 import android.widget.Toast
 import com.fyproject.fy_project_3as.R
 import com.fyproject.fy_project_3as.adapter.DashboardAdapter
@@ -16,6 +20,13 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
     private var gridView: GridView? = null
     private var dashboardAdapter: DashboardAdapter? = null
 
+   // var syllabus: TextView? = null
+   // var pastpaper: TextView? = null
+   // var quizzes: TextView? = null
+   // var milestone: TextView? = null
+  //  var stats: TextView? = null
+  //  var profile: TextView? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,8 +37,26 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
         dashboardAdapter = DashboardAdapter(applicationContext,arrayList!!)
         gridView?.adapter = dashboardAdapter
         gridView?.onItemClickListener = this
-    }
 
+     //   initComponent();
+    }
+//
+//    @SuppressLint("ResourceType")
+//    private fun initComponent() {
+//        syllabus = findViewById(R.drawable.syllabus)
+//        pastpaper = findViewById(R.drawable.pastpaper)
+//        quizzes = findViewById(R.drawable.quiz)
+//        milestone = findViewById(R.drawable.milestone)
+//        stats = findViewById(R.drawable.stats)
+//        profile = findViewById(R.drawable.profile)
+
+ //       syllabus?.setOnClickListener(View.OnClickListener {
+    //          val i = Intent(this, SyllabusActivity::class.java)
+  //          this.startActivity(i)
+ //       })
+
+ //   }
+//
     private fun setDataList(): ArrayList<DashboadItem>? {
 
         arrayList?.add(DashboadItem(R.drawable.syllabus,"Syllabus"))
@@ -40,6 +69,8 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
         return arrayList
 
     }
+
+
 
     override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
         var item:DashboadItem = arrayList!!.get(position)
