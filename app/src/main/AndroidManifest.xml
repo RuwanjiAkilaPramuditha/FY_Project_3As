@@ -14,10 +14,24 @@
         android:theme="@style/Theme.FY_Project_3As"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".Subject_Topic_Activity"
             android:exported="false" />
         <activity
+=======
+
+>>>>>>> origin/pramuditha/subject_screen
             android:name=".SubjectActivity"
+
+
+            android:name=".SubjectThreeTopicsActivity"
+
+            android:name=".SubjectTwoTopicsActivity"
+
+            android:exported="false" />
+        <activity
+            android:name=".activity.SubjectOneTopicsActivity"
+
             android:exported="false" />
         <activity
             android:name=".PastpaperActivity"
