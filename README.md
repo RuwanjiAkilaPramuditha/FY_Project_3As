@@ -1,9 +1,11 @@
+![WhatsApp Image 2022-10-14 at 4 30 48 PM](https://user-images.githubusercontent.com/99158371/195836547-6fc60924-7b80-47a5-bd23-60fc93f94af3.jpeg)
 
-![cover](https://ibb.co/MkmKsCC)
 
 # Welcome to ***3A's***
 
 This is a project to develop a productivity mobile application for A/L students. The main use of this system is to help the students for organizing their studies by providing self-assessment tools that can measure their progress.
+
+
 
 ## Aims
 
