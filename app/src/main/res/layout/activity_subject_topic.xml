@@ -4,20 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.SubjectActivity"
-    tools:ignore="ExtraText">
+    tools:context=".activity.Subject_Topic_Activity">
 
     <TextView
         android:id="@+id/sel_sub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="Select subject to mark your completed pastpapers"
+        android:text="Select subject to mark your completed topics"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,33 +29,33 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_pp_it"
+        android:id="@+id/it"
         android:layout_width="176dp"
         android:layout_height="52dp"
         android:text="ICT"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="248dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="223dp" />
 
     <Button
-        android:id="@+id/btn_pp_phy"
+        android:id="@+id/phy"
         android:layout_width="176dp"
         android:layout_height="52dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="104dp"
         android:text="Physics"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_pp_chem" />
+        app:layout_constraintTop_toBottomOf="@+id/chem" />
 
     <Button
-        android:id="@+id/btn_pp_chem"
+        android:id="@+id/chem"
         android:layout_width="175dp"
         android:layout_height="56dp"
         android:layout_marginTop="52dp"
