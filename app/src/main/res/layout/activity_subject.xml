@@ -31,7 +31,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/it"
+        android:id="@+id/btn_pp_it"
         android:layout_width="176dp"
         android:layout_height="52dp"
         android:text="ICT"
@@ -43,7 +43,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/phy"
+        android:id="@+id/btn_pp_phy"
         android:layout_width="176dp"
         android:layout_height="52dp"
         android:layout_marginTop="124dp"
@@ -54,10 +54,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chem" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_pp_chem" />
 
     <Button
-        android:id="@+id/chem"
+        android:id="@+id/btn_pp_chem"
         android:layout_width="175dp"
         android:layout_height="56dp"
         android:layout_marginTop="52dp"
