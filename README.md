@@ -5,6 +5,7 @@
 
 This is a project to develop a productivity mobile application for A/L students. The main use of this system is to help the students for organizing their studies by providing self-assessment tools that can measure their progress.
 
+![1](https://user-images.githubusercontent.com/99158371/195840706-1f1d5821-3dfe-462e-9466-c0ef43ad9d8e.jpg)
 
 
 ## Aims
