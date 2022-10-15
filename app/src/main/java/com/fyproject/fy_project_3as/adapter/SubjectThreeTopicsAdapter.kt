@@ -22,7 +22,7 @@ class SubjectThreeTopicsAdapter(private val subjectThreeTopicsList : ArrayList<S
     override fun onBindViewHolder(holder: SubjectThreeTopicsAdapter.SubjectThreeTopicsViewHolder, position: Int) {
 
         val subjectThreeTopics : SubjectThreeTopics = subjectThreeTopicsList[position]
-        holder.subjectThreeTopicsSubtopic.text = subjectThreeTopics.subTopic
+        holder.subjectThreeTopicsSubtopic.text = subjectThreeTopics.subtopic
         holder.subjectThreeTopicsTopic.text = subjectThreeTopics.topic
         holder.subjectThreeTopicsHours.text = subjectThreeTopics.hours.toString()
         holder.subjectThreeTopicsCompleted.isChecked = subjectThreeTopics.completed!!

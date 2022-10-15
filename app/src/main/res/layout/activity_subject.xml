@@ -34,27 +34,30 @@
         android:id="@+id/btn_pp_it"
         android:layout_width="176dp"
         android:layout_height="52dp"
+        android:layout_marginTop="64dp"
         android:text="ICT"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="248dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sel_sub"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btn_pp_phy"
         android:layout_width="176dp"
         android:layout_height="52dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="56dp"
         android:text="Physics"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_pp_chem" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_pp_it" />
 
     <Button
         android:id="@+id/btn_pp_chem"
@@ -66,8 +69,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sel_sub" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_pp_phy" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
