@@ -70,10 +70,21 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
 
     }
 
-
-
     override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
         var item:DashboadItem = arrayList!!.get(position)
-        Toast.makeText(applicationContext, item.name, Toast.LENGTH_SHORT).show()
+        if (item.name.equals("Syllabus")) {
+            val intent = Intent(this, TopicActivity::class.java)
+            startActivity(intent)
+        } else if (item.name.equals("Past Papers")) {
+            val intent = Intent(this, SubjectActivity::class.java)
+            startActivity(intent)
+        } else if (item.name.equals("Stats")) {
+            val intent = Intent(this, StatsActivity::class.java)
+            startActivity(intent)
+        } else if (item.name.equals("Profile")) {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+        }
+//        Toast.makeText(applicationContext, item.name, Toast.LENGTH_SHORT).show()
     }
 }

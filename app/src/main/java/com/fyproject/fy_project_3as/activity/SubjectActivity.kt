@@ -21,8 +21,8 @@ class SubjectActivity : AppCompatActivity() {
 
     private fun initComponent() {
         pps1 = findViewById(R.id.btn_pp_it)
-        pps2 = findViewById(R.id.btn_pp_chem)
-        pps3 = findViewById(R.id.btn_pp_phy)
+        pps2 = findViewById(R.id.btn_pp_phy)
+        pps3 = findViewById(R.id.btn_pp_chem)
 
         pps1?.setOnClickListener(View.OnClickListener {
             val i = Intent(this, SubjectOneTopicsActivity::class.java)
@@ -33,6 +33,7 @@ class SubjectActivity : AppCompatActivity() {
             val i = Intent(this, SubjectTwoTopicsActivity::class.java)
             this.startActivity(i)
         })
+
         pps3?.setOnClickListener(View.OnClickListener {
             val i = Intent(this, SubjectThreeTopicsActivity::class.java)
             this.startActivity(i)
